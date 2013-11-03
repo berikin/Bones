@@ -1,0 +1,82 @@
+@import 'colors.less'; //Base colors
+@import 'bones_base.less'; //Reset and basic styles
+@import 'bones.less'; //The grid system
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// PLACE THE STYLE HERE
+// @author: José Antonio Yáñez Jiménez
+// http://www.jimenezfrontend.es
+// @date: 4/11/2013
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// BASE STYLE
+// @author: José Antonio Yáñez Jiménez
+// http://www.jimenezfrontend.es
+// @date: 4/11/2013
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+@font-face {
+    font-family: 'Aclonica';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Aclonica'), local('Aclonica-Regular'), url(aclonica.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Droid Sans'), local('DroidSans'), url(droid.woff) format('woff');
+}
+
+
+html,
+body {
+    font-family: 'Droid Sans';
+    color: @pure-black;
+    background-color: @light-purple;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px;
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: 'Aclonica';
+    color: @white;
+    background-color: @strong-purple;
+}
+
+h2 {
+    margin: 0;
+    padding: 5px;
+    text-align: justify;
+    font-family: 'Aclonica';
+    color: @white;
+    background-color: @strong-purple;
+}
+
+footer {
+	padding: 30px;
+    height: 100px;
+    margin-top: 50px;
+    text-align: justify;
+    color: @white;
+    background-color: @strong-purple;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: @white;
+}
+

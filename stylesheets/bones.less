@@ -1,36 +1,49 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Bones V0.1
+// Forked from Skeleton - www.getskeleton.com (Copyright 2011, Dave Gamache)
+// @author: José Antonio Yáñez Jiménez
+// http://www.jimenezfrontend.es
+// @date: 3/11/2013
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Table of Contents
+//==========================================================================================
+//  #Base 960 Grid
+//  #Full HD Monitor
+//  #Tablet (Portrait)
+//  #Mobile (Portrait)
+//  #Mobile (Landscape)
+//  #Clearing
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 
-/* Table of Contents
-==================================================
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// #Base 960 Grid
+//==========================================================================================
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-/* #Base 960 Grid
-================================================== */
-
-    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; text-align: justify;}
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }
 
-    /* Nested Column Classes */
+    //Nested Column Classes
     .column.alpha, .columns.alpha               { margin-left: 0; }
     .column.omega, .columns.omega               { margin-right: 0; }
 
-    /* Base Grid */
+    //Base Grid
     .container .one.column,
     .container .one.columns                     { width: 40px;  }
     .container .two.columns                     { width: 100px; }
@@ -52,7 +65,7 @@
     .container .one-third.column                { width: 300px; }
     .container .two-thirds.column               { width: 620px; }
 
-    /* Offsets */
+    //Offsets
     .container .offset-by-one                   { padding-left: 60px;  }
     .container .offset-by-two                   { padding-left: 120px; }
     .container .offset-by-three                 { padding-left: 180px; }
@@ -69,12 +82,72 @@
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
 
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// #Full HD Monitor (1920*1080)
+//==========================================================================================
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//Note: Design for a width of 1920px
 
+    @media only screen and (min-width: 1900px) {
+        .container                                  { width: 1904px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
 
-/* #Tablet (Portrait)
-================================================== */
+        .container .one.column,
+        .container .one.columns                     { width: 99px; }
+        .container .two.columns                     { width: 218px; }
+        .container .three.columns                   { width: 337px; }
+        .container .four.columns                    { width: 456px; }
+        .container .five.columns                    { width: 575px; }
+        .container .six.columns                     { width: 694px; }
+        .container .seven.columns                   { width: 813px; }
+        .container .eight.columns                   { width: 932px; }
+        .container .nine.columns                    { width: 1051px; }
+        .container .ten.columns                     { width: 1170px; }
+        .container .eleven.columns                  { width: 1289px; }
+        .container .twelve.columns                  { width: 1408px; }
+        .container .thirteen.columns                { width: 1527px; }
+        .container .fourteen.columns                { width: 1646px; }
+        .container .fifteen.columns                 { width: 1765px; }
+        .container .sixteen.columns                 { width: 1884px; }
 
-    /* Note: Design for a width of 768px */
+        .container .one-third.column                { width: 610px; }
+        .container .two-thirds.column               { width: 1220px; }
+
+        // Offsets
+        .container .offset-by-one                   { padding-left: 119px; }
+        .container .offset-by-two                   { padding-left: 238px; }
+        .container .offset-by-three                 { padding-left: 357px; }
+        .container .offset-by-four                  { padding-left: 476px; }
+        .container .offset-by-five                  { padding-left: 595px; }
+        .container .offset-by-six                   { padding-left: 714px; }
+        .container .offset-by-seven                 { padding-left: 833px; }
+        .container .offset-by-eight                 { padding-left: 952px; }
+        .container .offset-by-nine                  { padding-left: 1071px; }
+        .container .offset-by-ten                   { padding-left: 1190px; }
+        .container .offset-by-eleven                { padding-left: 1309px; }
+        .container .offset-by-twelve                { padding-left: 1428px; }
+        .container .offset-by-thirteen              { padding-left: 1547px; }
+        .container .offset-by-fourteen              { padding-left: 1666px; }
+        .container .offset-by-fifteen               { padding-left: 1785px; }
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// #Tablet (Portrait)
+//==========================================================================================
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//Note: Design for a width of 768px
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
         .container                                  { width: 768px; }
@@ -105,7 +178,7 @@
         .container .one-third.column                { width: 236px; }
         .container .two-thirds.column               { width: 492px; }
 
-        /* Offsets */
+        // Offsets
         .container .offset-by-one                   { padding-left: 48px; }
         .container .offset-by-two                   { padding-left: 96px; }
         .container .offset-by-three                 { padding-left: 144px; }
@@ -123,11 +196,15 @@
         .container .offset-by-fifteen               { padding-left: 720px; }
     }
 
-
-/*  #Mobile (Portrait)
-================================================== */
-
-    /* Note: Design for a width of 320px */
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  #Mobile (Portrait)
+//==========================================================================================
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+// Note: Design for a width of 320px
 
     @media only screen and (max-width: 767px) {
         .container { width: 300px; }
@@ -154,7 +231,7 @@
         .container .one-third.column,
         .container .two-thirds.column  { width: 300px; }
 
-        /* Offsets */
+        // Offsets 
         .container .offset-by-one,
         .container .offset-by-two,
         .container .offset-by-three,
@@ -174,10 +251,15 @@
     }
 
 
-/* #Mobile (Landscape)
-================================================== */
-
-    /* Note: Design for a width of 480px */
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// #Mobile (Landscape)
+//==========================================================================================
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+// Note: Design for a width of 480px
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 420px; }
@@ -206,14 +288,20 @@
     }
 
 
-/* #Clearing
-================================================== */
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// #Clearing
+//==========================================================================================
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 
-    /* Self Clearing Goodness */
+    // Self Clearing Goodness
     .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
-    /* Use clearfix class on parent to clear nested columns,
-    or wrap each row of columns in a <div class="row"> */
+    // Use clearfix class on parent to clear nested columns,
+    // or wrap each row of columns in a <div class="row">
     .clearfix:before,
     .clearfix:after,
     .row:before,
@@ -231,7 +319,7 @@
     .clearfix {
       zoom: 1; }
 
-    /* You can also use a <br class="clear" /> to clear columns */
+    // You can also use a <br class="clear" /> to clear columns
     .clear {
       clear: both;
       display: block;
